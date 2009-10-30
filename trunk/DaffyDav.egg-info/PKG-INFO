@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: DaffyDav
+Version: 0.1dev
+Summary: General purpose fileserver supporting WebDAV and HTTP protocols (providing web-based file manager)
+Home-page: UNKNOWN
+Author: Matteo Pillon
+Author-email: matteo.pillon@gmail.com
+License: GPLv3
+Description: UNKNOWN
+Platform: UNKNOWN

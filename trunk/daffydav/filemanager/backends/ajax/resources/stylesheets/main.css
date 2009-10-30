@@ -1,0 +1,63 @@
+html,body
+{
+	margin:0;padding:0;
+	background: #000;	
+}
+
+div#main
+{
+	font: normal 12px/1.5em "Lucida Grande", "Helvetica Neue", Verdana, Arial, sans-serif;
+}
+
+h1 {
+    font-weight: normal;
+    color: #15F100;
+    margin-bottom: 5px;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    text-shadow: 2px 2px #327535;
+}
+
+div#title
+{
+    border-bottom: 4px #40FF00 solid;
+	padding: 5px 20px 0px 20px;
+	height: 60px;
+}
+
+div#navigator
+{
+	padding: 10px;
+	margin: 0px;
+	background: #FFFDCE;
+	float: left;
+	width: 300px;
+	overflow:auto;
+}
+
+div#contents
+{
+	margin-left: 325px;
+	padding: 10px;
+	background: #FFFDCE;
+}
+
+a.closedFolder
+{
+    padding-left: 50px;
+    background: url('/_$daffydav_filemanager_resources/pictures/closedFolder.png') no-repeat;
+}
+
+a.openFolder
+{
+    padding-left: 50px;
+    background: url('/_$daffydav_filemanager_resources/pictures/openFolder.png') no-repeat;
+}
+a.aloneFolder
+{
+    padding-left: 50px;
+    background: url('/_$daffydav_filemanager_resources/pictures/aloneFolder.png') no-repeat;
+}
+div.folder
+{
+    margin-left: 10px;
+}
