@@ -1,0 +1,20 @@
+=== CONFIGURATION ===
+In the config directory there's two configuration files.
+ o daffydav.conf
+   This file configures DaffyDav and its backends
+ o paste.ini
+   This is the configuration for the paste server.
+   Here you can specify host, port, logging and daffydav.conf location.
+
+=== SERVER ===
+DaffyDav is a WSGI application that supports multiple servers.
+ o paste httpserver
+   $ paster serve config/paste.ini 
+ o spawning
+   $ spawn -f daffydav.factories.config_factory config/daffydav.conf
+ o modwsgi (under Apache)
+   You have to add these directives to httpd.conf:
+    WSGIDaemonProcess daffydav processes=2 threads=1 display-name=daffydav user=www group=www
+    WSGIScriptAlias / DaffyDav/docs/daffydav.wsgi
+    WSGIProcessGroup daffydav
+   You have to edit DaffyDav/docs/daffydav.wsgi with the location of paste.ini file.
